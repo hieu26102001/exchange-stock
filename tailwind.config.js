@@ -3,9 +3,7 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     boxShadow: {
@@ -20,15 +18,6 @@ module.exports = {
       none: 'none',
     },
     extend: {
-      backgroundImage: {
-        'hero-pattern': "url('/bannergoc.png')",
-        'feature-pattern': "url('/edit2.png')",
-        'feature-mobile': "url('/joinfeauture2.png')",
-        'cta-pattern': 'url(/bg1.png)',
-        'cta-mobile': 'url(/cta-mobile.png)',
-        feauture: 'url(/bg-join.png)',
-        intro: 'url(/bannerwhyfmc.png)',
-      },
       fontFamily: {
         sans: ['Roboto', ...defaultTheme.fontFamily.sans]
       },
